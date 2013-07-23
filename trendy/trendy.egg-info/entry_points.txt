@@ -1,5 +1,0 @@
-      [paste.app_factory]
-      main = trendy:main
-      [console_scripts]
-      initialize_trendy_db = trendy.scripts.initializedb:main
-      
