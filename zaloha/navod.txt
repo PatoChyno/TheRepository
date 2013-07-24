@@ -1,0 +1,25 @@
+(ubuntu)
+(sudo) apt-get install python3, python-virtualenv, distribute
+
+#vytovrime virtualenv
+virtualenv --no-site-packages -p /usr/bin/python3 env
+
+#ak toto spravime, tak python, pip, etc. budu automaticky z env
+[source env/bin/activate]
+
+#nainstalujeme pyramidy do virtualenvu (aj s dependencies)
+#do env/bin ziskame skripty pserve (server), pcreate (create from scaffold)
+env/bin/pip install pyramid
+
+#vytvorenie aplikacie zo scaffoldu 'alchemy'
+
+#pouzijeme nasledovny riadok s develop moznostou, nainstalujeme project do env-u
+../env/bin/python setup.py [develop|install|test]
+
+#nainicializujeme databazu
+../env/bin/initialize_project_db development.ini
+
+#pustime pserve - server urceny pre vyvoj
+../env/bin/pserve development.ini --reload
+
+#v development.ini treba odkomentovat debug toolbar
