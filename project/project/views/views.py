@@ -273,3 +273,18 @@ def recovery_final_submit(request):
     user.password = password
     return HTTPFound(location=request.route_url('home'))
 
+@view_config(route_name='index', renderer='project:templates/index.mako')
+def view_form(request):
+    return {}
+
+@view_config(route_name='stats', request_method='POST', renderer='project:templates/stats.mako')
+def show_results(request):
+    print('tuuuuu')
+    word = request.POST['word']
+    return {'word': word}
+
+@view_config(route_name='stats', request_method='POST', renderer='project:templates/stats.mako')
+def show_results(request):
+    word = request.POST['word']
+    return {'word': word}
+

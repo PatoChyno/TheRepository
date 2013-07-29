@@ -368,5 +368,19 @@ body:before
   height: 100%;
   float: left;
   width: 0;
-  margin-top: -32767px;
+  margin-top: -32767px;}
+
+h1
+{
+font-size: 4px Arial;
 }
+
+.header
+{
+align: center;
+margin: 20 15 20 15;
+height: 20%;
+background-color: #F6B26B;
+border: 2px black solid;
+}
+

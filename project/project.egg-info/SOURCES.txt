@@ -32,6 +32,7 @@ project/static/transparent.gif
 project/static/stylesheets/screen.css
 project/templates/default.mako
 project/templates/home.mako
+project/templates/index.mako
 project/templates/login.mako
 project/templates/lost_password.mako
 project/templates/mytemplate.pt
@@ -39,6 +40,7 @@ project/templates/new_password.mako
 project/templates/register.mako
 project/templates/register_success.mako
 project/templates/small_success.mako
+project/templates/css/styles.css
 project/tests/__init__.py
 project/tests/test_login_logout.py
 project/views/__init__.py

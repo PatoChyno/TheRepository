@@ -90,6 +90,9 @@ def main(global_config, **settings):
     config.add_route('new_password', '/nove-heslo/{user_id}/{code}/')
     config.add_route('get_user_info', '/get-user-info/{user_id}/')
     config.add_route('recovery_small_success', '/stratene-heslo-uspech/')
+    config.add_route('index', '/index')
+    config.add_route('stats', '/stats')
+
 
     config.scan()
     random.seed()
